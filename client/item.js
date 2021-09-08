@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import * as R from "ramda";
 
@@ -40,5 +41,13 @@ const Item = ({ status, index, orig: { title } }) => (
     {!R.isEmpty(status) && <Status>{status}</Status>}
   </>
 );
+
+Item.propTypes = {
+  status: PropTypes.string,
+  index: PropTypes.string.isRequired,
+  orig: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+  }),
+};
 
 export { Item };

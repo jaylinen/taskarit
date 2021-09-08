@@ -1,4 +1,21 @@
 {
-    "extends": "eslint:recommended",
-    "environment": "es6"
+    "env" : {
+        "browser" : true,
+        "node" : true,
+        "es6" : true
+    },
+    "settings": {"react": {  "version": "detect"}},
+    "rules" : {
+        "no-unused-vars" : 2,
+        "no-undef" : 2
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "ignorePatterns": ["dist/**/*"]
 }
