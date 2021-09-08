@@ -5,18 +5,28 @@
   "main": "build.js",
   "type": "module",
   "dependencies": {
+    "@babel/preset-env": "^7.15.4",
+    "@babel/preset-react": "^7.14.5",
     "axios": "^0.21.4",
-    "esbuild": "^0.12.25",
     "object-hash": "^2.2.0",
-    "ramda": "^0.27.1"
+    "parcel-bundler": "^1.12.5",
+    "ramda": "^0.27.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-is": "^17.0.2",
+    "styled-components": "^5.3.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.5",
     "eslint": "^7.32.0",
     "nodemon": "^2.0.12"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:build": "npx nodemon ./app/build.js"
+    "data:dev": "npx nodemon ./build/index.js",
+    "data": "node ./build/index.js",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "",
   "license": "ISC",
