@@ -713,4 +713,4 @@ module.exports=[{index:"6",status:"Huonokuntoinen&kateissa",orig:{publication_id
 },{"react":"HdMw","styled-components":"OuUI","./list":"qxkJ"}],"Focm":[function(require,module,exports) {
 "use strict";var e=u(require("react")),r=u(require("react-dom")),t=require("./client/index");function u(e){return e&&e.__esModule?e:{default:e}}var n=document.getElementById("app");r.default.render(e.default.createElement(t.App,null),n);
 },{"react":"HdMw","react-dom":"X9zx","./client/index":"iVZW"}]},{},["Focm"], null)
-//# sourceMappingURL=/taskarit.abd39529.js.map
+//# sourceMappingURL=taskarit.abd39529.js.map
