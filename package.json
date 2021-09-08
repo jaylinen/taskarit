@@ -31,7 +31,7 @@
     "data:dev": "npx nodemon ./build/index.js",
     "data": "node ./build/index.js",
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --public-url ./"
   },
   "author": "",
   "license": "ISC",
